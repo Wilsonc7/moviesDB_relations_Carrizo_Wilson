@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+  <body>
+    <%- include('partials/header') %>
+    <h3 class="mt-5 mx-5">LISTADO DE GENEROS</h3>
+    <ul>
+        <% for( let i = 0; i < genres.length; i++ ) { %>
+        <li class="my-1 mx-5">
+            <a href="/genres/detail/<%= genres[i].id %>"><%= genres[i].name %></a>
+        </li>
+        <% } %>
+
+    </ul>
+    <p><a class="btn" id="btn" href="/">ATRAS</a></p><br>
+</body>
+
+</html>

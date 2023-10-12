@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.botonBorrar{
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+.botonVolver{
+  color: white;
+  background-color: #00B7FF;
+  padding: 10px;
+  border-radius: 10px;
+}
+

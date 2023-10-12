@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body >
+    <%- include('partials/header') %>
+<body>
+    
+    <h1><%= title %> </h1>    
+    <br>
+    <p>RATING: <%= rating %> </p>
+    <p>AWARDS: <%= awards %> </p>
+    <p>LENGTH: <%= length + ' min'%> </p>
+    <p>RELEASE DATE: <%=release_date %> </p>
+    <br>
+    <section>
+        <!--Aquí debe colocar los botones de Modificar - Borrar y Listado de Películas-->
+        <div class="col-12">
+          <div >
+            <form action="/movies/edit/<%= id %>"method="get">
+              <button class="btn btn-primary"type="submit">Editar</button>
+            </form>
+            
+          </div>
+      </div>
+      <div class="col-12">
+          <div  >
+            <form action="/movies/delete/<%= id %>?_method=DELETE" method="post">
+            <button class="btn btn-danger" type="submit"> Borrar</button>
+
+            </form>
+          </div>
+      </div>
+      <div class="col-12">
+          <div >
+            <form action="/movies" method="get">
+              <button class="btn btn-secondary" type="submit">Listado Peliculas</button>
+            </form>
+             
+          </div>
+      </div>
+    </section>
+
+</body>
+</html>
